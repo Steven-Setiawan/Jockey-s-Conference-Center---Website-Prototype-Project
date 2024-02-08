@@ -1,0 +1,597 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+body, header, main, footer, nav, ul, li, h1, p, img {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000000;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #000000;
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+b{
+  color: #326ef0;
+}
+
+a:hover{
+  color: #326ef0;
+}
+
+
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 35px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 0;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+}
+
+img {
+  display: block;
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+
+
+/****************************************************************************************/
+.overlay {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 75%;
+  height: 9.5%;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  color: #fff;
+}
+
+.content.active {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+  font-family: 'Orbitron';
+  font-size: 64px;
+  margin-bottom: 10px;
+}
+
+/****************************************************************************************/
+
+.hero {
+  position: relative;
+}
+
+.overlay2 {
+  position: absolute;
+  top: 0px;
+  right: 80px;
+  width: 10px;
+  height: 35%;
+  background-color: rgba(0, 0, 0, 0.35);
+  z-index: 2;
+}
+
+.slideshow {
+  position: relative;
+  z-index: 1;
+}
+
+.content2 {
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  padding-right: 20px;
+  padding-left: 40px;
+  padding-right: 20px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.content2 h2 {
+  margin-bottom: 10px;
+}
+
+.content2 p {
+  margin-top: 5px;
+}
+
+.content2.active {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+
+/****************************************************************************************/
+
+/****************************************************************************************/
+
+.slideshow {
+  display: flex;
+  overflow: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  width: 50%;
+  margin-left: 20px;
+}
+
+.slideshow img {
+  flex: 0 0 100%;
+  height: 425px;
+  object-fit: cover;
+  scroll-snap-align: start;
+}
+
+.overlay3{
+  margin: 40px;
+}
+
+/****************************************************************************************/
+
+#timer {
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/****************************************************************************************/
+
+footer {
+  background-color: #161616;
+  padding: 20px;
+}
+
+.footercontent {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.fsec1 h3{
+  padding: 5px;
+  text-align: left;
+  font-family: 'Orbitron';
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.fsec1 p {
+  text-align: left;
+  font-family: 'Orbitron';
+  padding: 13.5px;
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footersection2-3 {
+  padding-left: 30%;
+  flex: 1;
+}
+
+.footersection2-3 h3 {
+  font-family: 'Orbitron';
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footersection2-3 p {
+  font-family: 'Orbitron';
+  padding: 5px;
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.socialMedia {
+  margin-top: 10px;
+  padding-left: 0px;
+}
+
+.socialMedia a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #777;
+  font-size: 30px;
+}
+
+.socialMedia a:hover {
+  color: #333;
+}
+
+/****************************************************************************************/
+
+@media screen and (min-width: 1024px) {
+  .overlay {
+    width: 75%;
+    height: 40%;
+  }
+  .content{
+    height: 85%;
+  }
+
+  .overlay2 {
+    width: 50%;
+    left: 500px;
+    height: 90%;
+  }
+  .content2{
+    height: 350px;
+  }
+
+  .slideshow {
+    width: 50%;
+    height: 425px;
+  }
+
+  h1 {
+    font-size: 64px;
+  }
+
+  h2 {
+    font-size: 34px;
+  }
+
+  p{
+    font-size: 20px;
+  }
+
+  h3{
+    text-align: center;
+    font-size: 34px;
+    color: white;
+  }
+
+  footer{
+    width: 100%;
+  }
+
+ 
+  .footercontent {
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .fsec1 h3{
+    padding: 5px;
+    text-align: left;
+    font-family: 'Orbitron';
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .fsec1 p {
+    text-align: left;
+    font-family: 'Orbitron';
+    padding: 5px;
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .footersection2-3 {
+    padding-left: 0px;
+    flex: 1;
+  }
+  
+  .footersection2-3 h3 {
+    text-align: left;
+    padding-left: 40%;
+    font-family: 'Orbitron';
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .footersection2-3 p {
+    font-family: 'Orbitron';
+    padding: 13.5px;
+    padding-left: 40%;
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .socialMedia {
+    margin-top: 10px;
+    padding-left: 40%;
+  }
+  
+  .socialMedia a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #777;
+    font-size: 20px;
+  }
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .overlay {
+    width: 70%;
+    height: 45%;
+  }
+  .content{
+    height: 75%;
+  }
+
+  .overlay2 {
+    width: 50%;
+    height: 90%;
+    left: 300px;
+  }
+  .content2{
+    padding-top: 20%;
+    height: 350px;
+  }
+
+  .slideshow {
+    width: 50%;
+    height: 425px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+  p{
+    font-size: 20px;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 50px;
+    color: white;
+  }
+
+  footer{
+    width: 94%;
+  }
+
+ 
+  .footercontent {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .fsec1 h3{
+    padding: 5px;
+    text-align: left;
+    font-family: 'Orbitron';
+    color: #ffffff;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  
+  .fsec1 p {
+    text-align: left;
+    font-family: 'Orbitron';
+    padding: 5px;
+    color: #ffffff;
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .footersection2-3 {
+    padding-left: 0px;
+    flex: 1;
+  }
+  
+  .footersection2-3 h3 {
+    text-align: left;
+    padding-left: 30%;
+    font-family: 'Orbitron';
+    color: #ffffff;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  
+  .footersection2-3 p {
+    font-family: 'Orbitron';
+    padding: 13.5px;
+    padding-left: 30%;
+    color: #ffffff;
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .socialMedia {
+    margin-top: 10px;
+    padding-left: 30%;
+  }
+  
+  .socialMedia a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #777;
+    font-size: 20px;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  a,b{
+    font-size: 14px;
+  }
+
+  nav ul li {
+    display: inline;
+    margin-right: 15px;
+  }
+
+  .overlay {
+    width: 80%;
+    height: 45%;
+  }
+  .content{
+    height: 75%;
+  }
+
+  .overlay2 {
+    width: 52.8%;
+    height: 90%;
+    left: 40%;
+  }
+  .content2{
+    padding-top: 20%;
+    height: 180px;
+  }
+
+  .slideshow {
+    width: 80%;
+    height: 300px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p{
+    font-size: 12px;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+  }
+
+  section3{
+    margin: 50px;
+  }
+
+  footer{
+    width: 90%;
+  }
+
+ 
+  .footercontent {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .fsec1 h3{
+    padding: 5px;
+    text-align: left;
+    font-family: 'Orbitron';
+    color: #ffffff;
+    font-size: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .fsec1 p {
+    text-align: left;
+    font-family: 'Orbitron';
+    padding: 5px;
+    color: #ffffff;
+    font-size: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .footersection2-3 {
+    padding-left: 0px;
+    flex: 1;
+  }
+  
+  .footersection2-3 h3 {
+    text-align: left;
+    padding-left: 10%;
+    font-family: 'Orbitron';
+    color: #ffffff;
+    font-size: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .footersection2-3 p {
+    font-family: 'Orbitron';
+    padding: 13.5px;
+    color: #ffffff;
+    font-size: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .socialMedia {
+    margin-top: 10px;
+    padding-left: 0px;
+  }
+  
+  .socialMedia a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #777;
+    font-size: 20px;
+  }
+
+}
+
+@keyframes pushAnimation {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+}
+
+.hide-section {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.push-animation {
+  animation: pushAnimation 1s ease-out forwards;
+  opacity: 0;
+}

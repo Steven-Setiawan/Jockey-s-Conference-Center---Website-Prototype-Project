@@ -1,0 +1,431 @@
+/* Import Roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+/* Reset some default styles */
+body, header, main, footer, nav, ul, li, h1, p, img {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000000;
+}
+
+/* Taskbar styles */
+header {
+  background-color: rgba(0, 0, 0, 0.4); /* Use rgba color with an alpha value for transparency */
+  color: #000000;
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+b{
+  color: #326ef0;
+}
+
+a:hover{
+  color: #326ef0;
+}
+
+
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 35px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Body content styles */
+main {
+  padding: 0;
+  position: relative; /* Add relative positioning to the main element */
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Image styles */
+img {
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+
+
+/****************************************************************************************/
+
+#contactForm{
+  width: 650px;
+  height: 400px;
+  margin-left: 15%;
+  margin-top: 3%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  padding-left: 170px;
+  padding-bottom: 20px;
+  color: white;
+}
+
+form {
+  padding-top: 20px;
+  padding-left: 15%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+div {
+  margin-bottom: 10px;
+}
+
+label {
+  display: inline-block;
+  width: 150px;
+  color: white;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 200px;
+}
+
+textarea {
+  width: 200px;
+  height: 100px;
+}
+
+input[type="submit"] {
+  width: 60%;
+  padding: 10px;
+  background-color: #09216b;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #3c3fe1;
+}
+
+label[for="contactPhone"] {
+  width: 50px;
+}
+
+label[for="contactEmail"] {
+  width: 50px;
+}
+
+/****************************************************************************************/
+
+footer {
+  background-color: #161616;
+  padding: 20px;
+}
+
+.footercontent {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.fsec1 h3{
+  padding: 5px;
+  text-align: left;
+  font-family: 'Orbitron';
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.fsec1 p {
+  text-align: left;
+  font-family: 'Orbitron';
+  padding: 5px;
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footersection2-3 {
+  padding-left: 200px;
+  flex: 1;
+}
+
+.footersection2-3 h3 {
+  font-family: 'Orbitron';
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footersection2-3 p {
+  font-family: 'Orbitron';
+  padding: 5px;
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.content {
+  margin-top: 10px;
+  padding-left: 105px;
+}
+
+.content a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #777;
+  font-size: 20px;
+}
+
+.content a:hover {
+  color: #333;
+}
+
+/****************************************************************************************/
+
+@media screen and (min-width: 1024px) {
+  footer{
+    width: 100%;
+  }
+
+ 
+  .footercontent {
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .fsec1 h3{
+    padding: 5px;
+    text-align: left;
+    font-family: 'Orbitron';
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .fsec1 p {
+    text-align: left;
+    font-family: 'Orbitron';
+    padding: 5px;
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .footersection2-3 {
+    padding-left: 0px;
+    flex: 1;
+  }
+  
+  .footersection2-3 h3 {
+    text-align: left;
+    padding-left: 40%;
+    font-family: 'Orbitron';
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .footersection2-3 p {
+    font-family: 'Orbitron';
+    padding: 13.5px;
+    padding-left: 40%;
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .content {
+    margin-top: 10px;
+    padding-left: 40%;
+  }
+  
+  .content a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #777;
+    font-size: 20px;
+  }
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #contactForm {
+    width: 80%;
+    margin-left: 3.5%;
+  }
+
+  h1{
+    padding-left: 30%;
+  }
+
+  img{
+    margin-bottom: 200px;
+  }
+  
+  footer{
+    width: 94%;
+  }
+
+ 
+  .footercontent {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .fsec1 h3{
+    padding: 5px;
+    text-align: left;
+    font-family: 'Orbitron';
+    color: #ffffff;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  
+  .fsec1 p {
+    text-align: left;
+    font-family: 'Orbitron';
+    padding: 5px;
+    color: #ffffff;
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .footersection2-3 {
+    padding-left: 0px;
+    flex: 1;
+  }
+  
+  .footersection2-3 h3 {
+    text-align: left;
+    padding-left: 30%;
+    font-family: 'Orbitron';
+    color: #ffffff;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  
+  .footersection2-3 p {
+    font-family: 'Orbitron';
+    padding: 13.5px;
+    padding-left: 30%;
+    color: #ffffff;
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .content {
+    margin-top: 10px;
+    padding-left: 30%;
+  }
+  
+  .content a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #777;
+    font-size: 20px;
+  }
+
+}
+
+
+@media screen and (max-width: 767px) {
+  #contactForm {
+    width: 60%;
+    margin-left: 5%;
+  }
+
+  h1{
+    padding-left: 0px;
+  }
+
+  footer{
+    width: 90%;
+  }
+
+  img{
+    margin-bottom: 500px;
+  }
+
+ 
+  .footercontent {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .fsec1 h3{
+    padding: 5px;
+    text-align: left;
+    font-family: 'Orbitron';
+    color: #ffffff;
+    font-size: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .fsec1 p {
+    text-align: left;
+    font-family: 'Orbitron';
+    padding: 5px;
+    color: #ffffff;
+    font-size: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .footersection2-3 {
+    padding-left: 0px;
+    flex: 1;
+  }
+  
+  .footersection2-3 h3 {
+    text-align: left;
+    padding-left: 10%;
+    font-family: 'Orbitron';
+    color: #ffffff;
+    font-size: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .footersection2-3 p {
+    font-family: 'Orbitron';
+    padding: 13.5px;
+    color: #ffffff;
+    font-size: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .content {
+    margin-top: 10px;
+    padding-left: 0px;
+  }
+  
+  .content a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #777;
+    font-size: 20px;
+  }
+}

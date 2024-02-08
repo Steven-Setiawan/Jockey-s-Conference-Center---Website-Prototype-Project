@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+
+body, header, main, footer, nav, ul, li, h1, p, img {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000000;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #000000;
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+b{
+  color: #326ef0;
+}
+
+a:hover{
+  color: #326ef0;
+}
+
+
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 35px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 0;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+}
+
+header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+main {
+  padding: 40px;
+}
+
+/*********************************************************************************************/
+
+#intro {
+  margin-top: 100px;
+  text-align: center;
+  margin-bottom: 250px;
+}
+
+#intro h2 {
+  color: white;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+#intro p{
+  color: white;
+}
+
+/*********************************************************************************************/
+
+.timeline {
+  position: relative;
+  margin: 50px 0;
+  padding: 0;
+  height: 800px;
+  color: white;
+}
+
+.timeline:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: calc(100% - 20px); 
+  background: #ffffff;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  color: white;
+  position: relative;
+  padding: 20px 40px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  margin-bottom: 80px;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.timeline-item.visible::before {
+  background: #ffffff;
+}
+
+.timeline-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.timeline-content {
+  color: white;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.timeline-content2{
+  padding-left: 700px;
+}
+
+.timeline-content h2 {
+  margin: 0;
+  color: #326ef0;
+}
+
+.timeline-content2 h2 {
+  margin: 0;
+  color: #326ef0;
+}
+
+.timeline-content p {
+  margin: 10px 0;
+  color: white;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+/**************************************************************************************/
+
+#team {
+  margin-top: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 200px;
+}
+
+#team h2{
+  color: white;
+  padding-top: 8%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 34px;
+}
+
+.team-member {
+  width: 230px;
+  margin: 20px;
+  text-align: center;
+}
+
+.team-member img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.team-member h3 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: white;
+}
+
+.team-member p {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+/****************************************************************************************/
+
+footer {
+  background-color: #161616;
+  padding: 20px;
+}
+
+.footercontent {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.fsec1 h3{
+  padding: 5px;
+  text-align: left;
+  font-family: 'Orbitron';
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.fsec1 p {
+  text-align: left;
+  font-family: 'Orbitron';
+  padding: 5px;
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footersection2-3 {
+  padding-left: 200px;
+  flex: 1;
+}
+
+.footersection2-3 h3 {
+  font-family: 'Orbitron';
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footersection2-3 p {
+  font-family: 'Orbitron';
+  padding: 5px;
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.content {
+  margin-top: 10px;
+}
+
+.content a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #777;
+  font-size: 20px;
+}
+
+.content a:hover {
+  color: #333;
+}
+
+/****************************************************************************************/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  
+  .timeline-content{
+    width: 50%;
+  }
+
+  .timeline-content2{
+    padding-left: 55%;
+  }
+
+  .timeline-content h2 {
+    margin: 0;
+    color: #326ef0;
+    font-size: 20px;
+  }
+  
+  .timeline-content p {
+    margin: 10px 0;
+    color: white;
+    font-size: 16px;
+  }
+
+  .timeline-content2 h2 {
+    margin: 0;
+    color: #326ef0;
+    font-size: 20px;
+  }
+  
+  .timeline-content2 p {
+    margin: 16px 0;
+    color: white;
+    font-size: 16px;
+  }
+
+
+
+  #team {
+    margin-top: 300px;
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 200px;
+  }
+
+
+  footer{
+    width: 94%;
+  }
+
+ 
+  .footercontent {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .fsec1 h3{
+    padding: 5px;
+    text-align: left;
+    font-family: 'Orbitron';
+    color: #ffffff;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  
+  .fsec1 p {
+    text-align: left;
+    font-family: 'Orbitron';
+    padding: 5px;
+    color: #ffffff;
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .footersection2-3 {
+    padding-left: 0px;
+    flex: 1;
+  }
+  
+  .footersection2-3 h3 {
+    text-align: left;
+    padding-left: 30%;
+    font-family: 'Orbitron';
+    color: #ffffff;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  
+  .footersection2-3 p {
+    font-family: 'Orbitron';
+    padding: 13.5px;
+    padding-left: 30%;
+    color: #ffffff;
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .content {
+    margin-top: 10px;
+    padding-left: 30%;
+  }
+  
+  .content a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #777;
+    font-size: 20px;
+  }
+
+}
+
+/* Mobile styles */
+@media screen and (max-width: 767px) {
+  a,b{
+    font-size: 14px;
+  }
+
+  nav ul li {
+    display: inline;
+    margin-right: 15px;
+  }
+
+  
+  .timeline-content{
+    width: 40%;
+  }
+
+  .timeline-content2{
+    padding-left: 55%;
+  }
+
+  .timeline-content h2 {
+    margin: 0;
+    color: #326ef0;
+    font-size: 12px;
+  }
+  
+  .timeline-content p {
+    margin: 10px 0;
+    color: white;
+    font-size: 10px;
+  }
+
+  .timeline-content2 h2 {
+    margin: 0;
+    color: #326ef0;
+    font-size: 12px;
+  }
+  
+  .timeline-content2 p {
+    margin: 10px 0;
+    color: white;
+    font-size: 10px;
+  }
+
+  footer{
+    width: 90%;
+  }
+ 
+  .footercontent {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .fsec1 h3{
+    padding: 5px;
+    text-align: left;
+    font-family: 'Orbitron';
+    color: #ffffff;
+    font-size: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .fsec1 p {
+    text-align: left;
+    font-family: 'Orbitron';
+    padding: 5px;
+    color: #ffffff;
+    font-size: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .footersection2-3 {
+    padding-left: 0px;
+    flex: 1;
+  }
+  
+  .footersection2-3 h3 {
+    text-align: left;
+    padding-left: 10%;
+    font-family: 'Orbitron';
+    color: #ffffff;
+    font-size: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .footersection2-3 p {
+    font-family: 'Orbitron';
+    padding: 13.5px;
+    color: #ffffff;
+    font-size: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .content {
+    margin-top: 10px;
+    padding-left: 0px;
+  }
+  
+  .content a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #777;
+    font-size: 20px;
+  }
+
+}
